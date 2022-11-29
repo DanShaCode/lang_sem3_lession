@@ -1,7 +1,9 @@
 ﻿// Создание массива с типом string
 
             //      0        1      2      3      4   - Индексы элементов массива
-string[] names = {"Mama", "Papa", "Ya", "Baba", "Dida"}; 
+// string[] names = {"Mama", "Papa", "Ya", "Baba", "Dida"}; 
+
+
 
 // Выводим на экран элемент массива names с индексом 4 =============================================
 
@@ -12,6 +14,8 @@ string[] names = {"Mama", "Papa", "Ya", "Baba", "Dida"};
 
 // Console.WriteLine(names.Length);
 
+
+
 // Перебираем и выводим на экран каждый элемент массива ============================================
 
 // for (int i = 0; i < names.Length; i++)
@@ -19,15 +23,47 @@ string[] names = {"Mama", "Papa", "Ya", "Baba", "Dida"};
 //     Console.WriteLine(names[i]);
 // }
 
+
+
 // Меняем элемент в массиве ========================================================================
 
 // Определенному элементу массива names с индексом присваивается новое значение 
-names[0] = "Bibi"; 
-names[2] = "Kruc";
+// names[0] = "Bibi"; 
+// names[2] = "Kruc";
 
-for (int i = 0; i < names.Length; i++)
-{
-    Console.WriteLine(names[i]);
-}
+// for (int i = 0; i < names.Length; i++)
+// {
+//     Console.WriteLine(names[i]);
+// }
 
 
+
+// Цикл foreach ======================================================================================
+
+// names[names.Length - 1] = "Bibi"; 
+// names[2] = names[2] + "Kruc";
+
+// for (int i = 0; i < names.Length; i++)
+// {
+//     Console.WriteLine(names[i]);
+// }
+
+// foreach (string n in names)
+// {
+//     Console.WriteLine(n);
+// }
+
+
+
+// Интересные факты ==================================================================================
+
+// 1. Можно задать массив следующим образом
+
+// int num = Convert.ToInt32(Console.ReadLine()); // Вводим количество элементов в массиве
+
+// int[] numbers = new int[num]; // Создаем массив с ранее введеным количеством элементов
+
+// for (int i = 0; i < numbers.Length; i++) // Перебираем массив
+// {
+//     Console.WriteLine(numbers[i]); // Выводим на экран элементы
+// }
